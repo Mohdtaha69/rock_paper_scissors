@@ -61,7 +61,37 @@ function playround(humanchoice,computerchoice){
 
 }
 
-const humanchoice  = getHumanChoice().toLowerCase();
-const computerchoice = getComputerChoice();
+const humanchoice1  = getHumanChoice().toLowerCase();
+const computerchoice1 = getComputerChoice();
 
-playround(humanchoice,computerchoice);
+const humanchoice2  = getHumanChoice().toLowerCase();
+const computerchoice2 = getComputerChoice();
+
+const humanchoice3  = getHumanChoice().toLowerCase();
+const computerchoice3 = getComputerChoice();
+
+const humanchoice4  = getHumanChoice().toLowerCase();
+const computerchoice4 = getComputerChoice();
+
+const humanchoice5  = getHumanChoice().toLowerCase();
+const computerchoice5 = getComputerChoice();
+
+function playgame(){
+    playround(humanchoice1,computerchoice1);
+    playround(humanchoice2,computerchoice2);
+    playround(humanchoice3,computerchoice3);
+    playround(humanchoice4,computerchoice4);
+    playround(humanchoice5,computerchoice5);
+
+    if(humanscore>computerscore){
+        console.log("you win the game")
+    }
+    else if (humanscore<computerscore){
+        console.log("you loose the game")
+    }
+    else{
+        console.log("its a tie game")
+    }
+}
+
+playgame()
